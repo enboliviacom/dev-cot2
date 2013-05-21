@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>enbolivia.com - Cotizador m&oacute;vil</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="js/jquery.mobile/jquery.mobile-1.1.1.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.mobile/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript" src="js/configJS.js"></script>
+  <script type="text/javascript">
+  	generatePackages = false;
+  	generateDetail = true;
+  	populateDatabase = true;
+  </script>
+  <script type="text/javascript" src="js/functions.js" charset="utf-8"></script>
+  	<style type="text/css">
+	{
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	}
+	</style>
+</head>
+<body onload="onLoad()">
+<div data-role="page" id="page_index">
+  <div data-role="header" class="ui-bar-d" data-position="fixed" id="header_comp" >
+    <h1 id="title_detail">Productos</h1>
+    <a href="javascript:history.back(1)" data-role="button" data-icon="arrow-l"> &nbsp;</a>
+    <div class="decoration decoration_header"></div>
+      <div id="costo_tiempo" class="ui-grid-a">
+        <div class="ui-block-a">
+          <h4 class="heading-icon">Costo (Bs):</h4>
+          <input type="text" id="cost" readonly="readonly" value="0" min="1" max="1000000" data-mini="true" />
+        </div>
+        <div class="ui-block-b">
+          <h4 class="heading-icon">Cantidad:</h4>
+          <input type="text" id="quantity" readonly="readonly" value="0" min="1" max="10000" data-mini="true" />
+        </div>
+      </div><!-- /costo_tiempo -->
+  </div><!-- header  -->
+
+  <div id="page_paquetes_detalle" data-role="content"
+    <div id="popupLogin" class="ui-corner-all">
+    	<div style="padding:10px 20px;">
+        	Indique la cantidad del pedido:
+            <label for="pw" class="ui-hidden-accessible">Cantidad:</label>
+            <input name="amount" id="amount" value="" placeholder="cantidad" type="number">
+            <input name="currentId" id="currentId" value="0" type="hidden">
+            <input name="costCurrentId" id="costCurrentId" value="0" type="hidden">
+            <input name="stockCurrentId" id="stockCurrentId" value="0" type="hidden">
+            <a href="#" id="enterAmount" onClick="orderItem()" data-role="button" data-icon="check">Aceptar</a> 
+      	</div>
+    </div>
+    <!-- <form id="general_form222">
+    	<h4 class="heading-icon">Productos disponibles</h4>
+    </form> -->
+    <h4 class="heading-icon">Productos disponibles</h4>
+    <input type="search" value="" placeholder="Buscar producto" id="search_word" onchange="search_f()"  />
+    <ul data-role="listview"  data-divider-theme="d" 
+    	data-inset="true" id="general_form">
+ 	</ul>
+  </div><!-- page_paquetes_detalle -->
+
+  <div id="the_footer" data-role="footer" class="ui-bar-d" data-position="fixed" >
+      <a href="paquetes.html" data-url="paquetes.html" rel="external">Categoría</a>
+      <a href="compra_lista.html" id="lista_pedido" data-url="compra_lista.html" rel="external">Lista Pedido</a>
+      <!-- <a href="#" id="lista_pedido" rel="external">Lista Pedido</a> -->
+      <a href="contacto.html" data-url="contacto.html" rel="external">Crear Pedido</a>
+  </div>
+  <!-- <div id="the_footer" data-role="footer" class="ui-bar-d" data-position="fixed" >
+      <input type="button" value="bu" data-inline="true" data-mini="true" onclick="alert('click')">
+  </div> -->
+</div><!-- page_index  -->
+
+</body>
+</html>

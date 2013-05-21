@@ -1,0 +1,372 @@
+/*------------------------------------*\
+    enbolivia.com s.r.l.
+\*------------------------------------*/
+
+/*------------------------------------*\
+	Proyect		: App enbolivia.com
+	Description	: Design based on CSS 3
+	Designer   	: Luis Villasante
+	E - mail   	: luis@enbolivia.com | luis.villasante@gmail.com
+	Filename   	: style.css
+	Version    	: 1.0
+\*------------------------------------*/
+*:focus {
+	outline: none;
+}
+
+*,*:after,*:before {	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;	box-sizing: border-box;	padding: 0;	margin: 0;}
+
+body{
+	background-image:url(../images/body-bg.png);
+	-webkit-font-smoothing: antialiased;
+	overflow-x:hidden;
+	h1, h2, h3, h4, h5, h6 {
+    color: #3B4043;
+	font-family: 'Open Sans',sans-serif;
+}
+}
+h1, h2, h3, h4, h5, h6 {   
+    font-family: 'Dosis',sans-serif;
+}
+p{
+    font-size: 12px;
+    line-height: 20px;
+	margin-bottom: 20px;
+}
+p.logo{
+	background: url("../images/logo_simsa.png") no-repeat scroll center center transparent;
+    display: block;
+    height: 100px;	
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 1000px) {
+	#page_home p.logo{
+		background:url(../images/logo_enbolivia_com_big.png)no-repeat center center; 
+		display: block;
+		width:800px;
+		height:300px;
+		text-align:center;
+		margin: 0px auto;
+	}
+}
+/*------------------------------------*\
+    $Preloader
+\*------------------------------------*/
+#preloader{
+	
+}
+#preloader #status{
+
+}
+#preloader #status p.center-text{
+	text-align: center;
+}
+
+/*------------------------------------*\
+    $Page Divider
+\*------------------------------------*/
+.decoration{
+	background-image:url(../images/decoration.png);
+	height:2px;
+	background-repeat:repeat;
+	margin-bottom:20px;
+	display:block;
+	width:100%;
+}
+.decoration_header{
+	margin-bottom: 5px;
+}
+
+
+.heading-icon {
+    background-image: url("../images/heading.png");
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    padding-left: 30px;
+	color: #3B4043;
+	font-size:16px;
+}
+
+/*------------------------------------*\
+    $Icons List Home Page
+\*------------------------------------*/
+.icon-lists {
+    font-size: 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.icon-lists li{		
+	line-height:20px;
+	margin-bottom:5px;										
+	list-style:none;				
+	padding-left:30px;
+	font-size:12px;
+}
+.icon-lists li{
+	background-repeat:no-repeat;	
+	background-position:0 5px;
+}	
+.icon-lists li span{
+	display: inline-block;
+	width: 60px; 
+}
+.icon-lists li.list-home{
+	background-image:url(../images/icon_home.png);	
+}
+.icon-lists li.list-fax{
+	background-image:url(../images/icon_fax.png);
+}
+.icon-lists li.list-phone{
+	background-image:url(../images/icon_phone.png);
+}
+.icon-lists li.list-mail{
+	background-image:url(../images/icon_envelop.png);
+}
+.icon-lists li.list-web{
+	background-image:url(../images/icon_link.png);
+}
+
+/*------------------------------------*\
+    $Styles for the green button
+\*------------------------------------*/
+.green {
+	color: #5a742d;
+	border: 1px solid #95b959;
+	background-image: -moz-linear-gradient(#cae387, #a5cb5e);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a5cb5e), to(#cae387));
+	background-image: -webkit-linear-gradient(#cae387, #a5cb5e);
+	background-image: -o-linear-gradient(#cae387, #a5cb5e);
+	text-shadow: 1px 1px 1px #dff4bc;
+	background-color: #a5cb5e;
+}
+.green:hover {
+	border: 1px solid #687e30;
+	background-image: -moz-linear-gradient(#a5cb5e, #cae387);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cae387), to(#a5cb5e));
+	background-image: -webkit-linear-gradient(#a5cb5e, #cae387);
+	background-image: -o-linear-gradient(#a5cb5e, #cae387);
+	background-color: #cae387;
+}
+.green:active {border: 1px solid #506320; width:auto; height:auto;}
+
+
+
+.button {
+	font-size: 12px; 
+	text-decoration: none!important; 
+	/*padding: 2px 10px; */
+	border-radius: 3px; 
+	box-shadow: inset 0px 0px 2px #fff;
+	-o-box-shadow: inset 0px 0px 2px #fff;
+	-webkit-box-shadow: inset 0px 0px 2px #fff;
+	-moz-box-shadow: inset 0px 0px 2px #fff;
+	display:inline-block;
+
+	
+}
+.button:active {
+	display:inline-block; 
+	/*padding: 2px 10px; */
+	box-shadow: inset 0px 0px 3px #999;
+	-o-box-shadow: inset 0px 0px 3px #999;
+	-webkit-box-shadow: inset 0px 0px 3px #999;
+	-moz-box-shadow: inset 0px 0px 3px #999;
+}
+
+.button:visited {
+	display:inline-block;
+	/*padding: 2px 10px;*/
+	/*margin-right:20px;*/
+	/*margin-bottom:30px;*/ 
+	box-shadow: inset 0px 0px 3px #999;
+	-webkit-box-shadow: inset 0px 0px 3px #999;
+	-moz-box-shadow: inset 0px 0px 3px #999;
+	-o-box-shadow: inset 0px 0px 3px #999;
+}
+
+.blue {
+    background-color: #8EA5B5;
+    background-image: linear-gradient(#BBCBD8, #8EA5B5);
+    border: 1px solid #929BA2;
+    color: #57646D;
+    text-shadow: 1px 1px 1px #C6D4DF;
+}
+.blue:hover {
+    background-color: #BBCBD8;
+    background-image: linear-gradient(#8EA5B5, #BBCBD8);
+    border: 1px solid #656F78;
+}
+.blue:active {
+    border: 1px solid #434F5A;
+}
+.grey {
+    background-color: #E1E1E1;
+    background-image: linear-gradient(#EDEDED, #E1E1E1);
+    border: 1px solid #D0D0D0;
+    color: #444444;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+.grey:hover {
+    background-color: #EDEDED;
+    background-image: linear-gradient(#E1E1E1, #EDEDED);
+    border: 1px solid #B0B0B0;
+}
+.grey:active {
+    border: 1px solid #666666;
+    display: block;
+    padding: 8px 12px;
+    width: auto;
+}
+.black {
+    background-color: #454545;
+    background-image: linear-gradient(#656565, #454545);
+    border: 1px solid #4D4D4D;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #6D6D6D;
+}
+.black:hover {
+    background-color: #656565;
+    background-image: linear-gradient(#454545, #656565);
+    border: 1px solid #363636;
+}
+.black:active {
+    border: 1px solid #000000;
+}
+
+/*------------------------------------*\
+    $Paquetes
+\*------------------------------------*/
+#page_paquetes{
+
+}
+#page_paquetes a.ui-link-inherit {
+	padding-bottom: 2px;
+    padding-left: 92px;
+    padding-top: 2px;
+}
+#page_paquetes p .note {
+    color: #739606;
+    font-weight: 700;
+}
+
+span.note {
+    color: #739606;
+    font-weight: 700;
+}
+
+/*------------------------------------*\
+    $Paquetes detalle
+\*------------------------------------*/
+
+#general_form li.listado1 {
+    padding-left: 70px;
+}
+
+#general_form li.listado1 img {
+    margin-top: 10px;
+}
+
+#general_form li.listado1 h2.ui-li-heading {
+    font-size: 14px;
+}
+
+#page_paquetes_detalle{}
+#page_paquetes_detalle fieldset div img{
+display: inline-block;
+margin-right: 4px;
+}
+/*#page_paquetes_detalle .ui-grid-a div.ui-input-text {*/
+
+#costo_tiempo{
+	padding: 0 15px;
+	margin-bottom: 2px;
+}
+#costo_tiempo div.ui-input-text {
+	margin-right: 5px;
+
+}
+
+/*------------------------------------*\
+    $Footer
+\*------------------------------------*/
+#the_footer{
+	padding: 5px 0;
+	text-align: center;
+	height: 55px;
+}
+
+#the_footer a.paquetes{
+	/*background-image: url("../images/icon_paquetes.png");
+	background-repeat: no-repeat;
+	background-position: 100px center;
+	text-align: left;
+	width: 160px;*/
+}
+#the_footer a.paquetes span.ui-btn-inner{
+	/*padding: 8px 0 8px 25px;
+	border-top: none;*/
+}
+
+.hide_elem {
+	display: none;
+	color: #cc0000;
+}
+
+/*************** pruebas para popup   ****************/
+div#popupLogin {
+	display: none;
+	visibility: hidden;
+}
+
+input.bigInput {
+}
+
+/******** pedidos **/
+#general_form li {
+	height: 90px;
+}
+
+#general_form li img {
+	padding-top: 0px;
+}
+
+#general_form li h2 {
+	margin-top: -7px;
+	white-space:normal;
+}
+
+#general_form * .ui-li-thumb, #general_form * .ui-li-icon {
+	left: 1px;
+    max-height: 60px; 
+    max-width: 60px;
+    position: absolute;
+    top: 0;
+}
+/******** fin pedidos **/
+
+div.pedidos {
+	display: inline-block;	
+}
+
+div.pedidos div.ui-input-text {
+	margin-right: 5px;
+}
+
+div.pedidos div.ui-block-a {
+	/*margin-top: -5px;*/
+}
+
+
+div.pedidos div.ui-block-a input.bigInput {
+	/*width: 70px;*/
+	height: 30px;
+	margin-top: 4px;
+}
+
+/*div#pedidos div.ui-block-b input.bigInput2 {
+	margin-bottom: 10px;
+}*/

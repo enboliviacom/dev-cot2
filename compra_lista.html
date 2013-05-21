@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>enbolivia.com - Cotizador m&oacute;vil</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="js/jquery.mobile/jquery.mobile-1.1.1.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.mobile/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript" src="js/configJS.js"></script>
+  <script type="text/javascript">
+  	generatePackages = false;
+  	generateDetail = false;
+  	generateCompraLista = true;
+  </script>
+  <script type="text/javascript" src="js/functions.js" charset="utf-8"></script>
+  	<style type="text/css">
+	{
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	}
+	</style>
+</head>
+<body onload="onLoad()">
+<div data-role="page" id="page_index">
+  <div data-role="header" class="ui-bar-d" data-position="fixed">
+    <h1 id="title_detail">Productos</h1>
+    <a href="javascript:history.back(1)" data-role="button" data-icon="arrow-l"> &nbsp;</a>
+  </div><!-- header  -->
+
+  <div id="page_paquetes_detalle" data-role="content">
+    <h4 class="heading-icon">Productos pedidos</h4><br />
+    <ul data-role="listview" data-count-theme="b" data-divider-theme="d" id="productos_listado">
+ 	</ul>
+  </div><!-- page_paquetes_detalle -->
+
+  <div id="the_footer" data-role="footer" class="ui-bar-d" data-position="fixed">
+  		<!-- class="button grey"  -->
+      <a href="index.html" data-url="index.html" rel="external">Inicio</a>
+      <a href="paquetes.html" data-url="paquetes.html" rel="external">Categoría</a>
+      <a href="contacto.html" data-url="contacto.html" rel="external">Crear Pedido</a>
+  </div>
+</div><!-- page_index  -->
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>enbolivia.com - Cotizador m&oacute;vil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="js/jquery.mobile/jquery.mobile-1.1.1.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.mobile/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript" src="js/configJS.js"></script>
+<script type="text/javascript">
+	generatePackages = false;
+</script>
+<script type="text/javascript" src="js/functions.js" charset="utf-8"></script>
+</head>
+<body onload="onLoad()">
+<div data-role="page" id="page_index">
+  <div data-role="header" class="ui-bar-d" data-position="fixed">
+    <h1>Cotizador</h1>
+    
+  </div><!-- header  -->
+
+  <div id="page_home" data-role="content">
+  	<div id="preloader">
+      <div id="status">
+        <p class="center-text">
+          <em>Cargando el contenido ...</em>
+          <em>obteniendo información para la base de datos!</em><br>
+          <img src="images/loading.gif">
+        </p>
+      </div>
+    </div>
+    <p class="logo"> &nbsp; </p>
+    <div class="decoration"></div>
+    <h4 class="heading-icon">Empresa</h4>
+    <p>SIMSA Sociedad Industrial Molinera</p>
+    <div class="decoration"></div>
+    <h4 class="heading-icon">Cotizador móvil</h4>
+    <p>Descripción de la aplicación.</p>
+    <div class="decoration"></div>
+    <h4 class="heading-icon">Empresa</h4>
+    <ul class="icon-lists">
+      <li class="list-home">Dirección empresa</li>
+      <li class="list-fax"><span>Fax:</span> <a class="button green" href="tel:22415690">(+591-2)2281343</a></li>
+      <li class="list-phone"><span>Tel&eacute;fono:</span> <a class="button green" href="tel:22422542">(+591-2)2281641</a></li>
+      <li class="list-mail"><span>Email:</span> <a class="button green" href="mailto:info@enbolivia.com">info@princesa.com.bo</a></li>
+      <li class="list-web"><span>Sitio Web:</span> <a class="button green" href="http://www.enbolivia.com">www.princesa.com.bo</a></li>
+    </ul>
+  </div><!-- page_home -->
+
+  <div id="the_footer" data-role="footer" class="ui-bar-d" data-position="fixed" >
+    <a href="#" onclick="newOrder()">Nuevo Pedido</a>
+  </div>
+</div><!-- page_index  -->
+</body>
+</html>
