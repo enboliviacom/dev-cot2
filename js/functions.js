@@ -135,20 +135,26 @@ function initializeDB() {
  * Function to check if there is new data to loaded in local database
  */
 function checkCotizadorData() {
-	db.transaction( createOrderTable, errorCB, successCB );
-	
-	$.ajax({
-		url: urlWebService,
-		dataType: 'json',
-		success: parseAndSaveData,
-		error: function(request, status, error) {
-		      	console.log("Error status " + status);
-		      	console.log("Error request status text: " + request.statusText);
-		      	console.log("Error request status: " + request.status);
-		      	console.log("Error request response text: " + request.responseText);
-		      	console.log("Error response header: " + request.getAllResponseHeaders());
-		    	}
-	});
+	console.log("el valor de base de datos " + window.localStorage.getItem( "database_loaded" ));
+	if( window.localStorage.getItem( "database_loaded" ) != 1 ) {
+		db.transaction( createOrderTable, errorCB, successCB );
+		
+		$.ajax({
+			url: urlWebService,
+			dataType: 'json',
+			success: parseAndSaveData,
+			error: function(request, status, error) {
+			      	console.log("Error status " + status);
+			      	console.log("Error request status text: " + request.statusText);
+			      	console.log("Error request status: " + request.status);
+			      	console.log("Error request response text: " + request.responseText);
+			      	console.log("Error response header: " + request.getAllResponseHeaders());
+			    	}
+		});
+	}
+	else {
+		$( '#preloader' ).hide();
+	}
 }
 
 /**
@@ -176,7 +182,9 @@ function parseAndSaveData( data ) {
 			db.transaction( insertClients, errorCB, successCB );
 		}
 	
-	
+		
+		window.localStorage.setItem( "database_loaded", "1" );
+		
 		$( '#preloader' ).hide();
 	} );
 }
