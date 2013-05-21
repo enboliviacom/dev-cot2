@@ -136,7 +136,7 @@ function initializeDB() {
  */
 function checkCotizadorData() {
 	console.log("el valor de base de datos " + window.localStorage.getItem( "database_loaded" ));
-	if( window.localStorage.getItem( "database_loaded" ) != 1 ) {
+	if( window.localStorage.getItem( "database_loaded" ) != "1" ) {
 		db.transaction( createOrderTable, errorCB, successCB );
 		
 		$.ajax({

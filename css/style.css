@@ -44,6 +44,14 @@ p.logo{
     margin-left: auto;
     margin-right: auto;
 }
+
+.icon_app{
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+}
+
 @media screen and (min-width: 1000px) {
 	#page_home p.logo{
 		background:url(../images/logo_enbolivia_com_big.png)no-repeat center center; 
