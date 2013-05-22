@@ -135,7 +135,7 @@ function initializeDB() {
  * Function to check if there is new data to loaded in local database
  */
 function checkCotizadorData() {
-	console.log("el valor de base de datos " + window.localStorage.getItem( "database_loaded" ));
+	//console.log("el valor de base de datos " + window.localStorage.getItem( "database_loaded" ));
 	//--if( window.localStorage.getItem( "database_loaded" ) != "1" ) {
 	if( 1 ) {
 		db.transaction( createOrderTable, errorCB, successCB );
@@ -145,6 +145,7 @@ function checkCotizadorData() {
 			dataType: 'json',
 			success: parseAndSaveData,
 			error: function(request, status, error) {
+				alert("error al descargar");
 			      	console.log("Error status " + status);
 			      	console.log("Error request status text: " + request.statusText);
 			      	console.log("Error request status: " + request.status);
