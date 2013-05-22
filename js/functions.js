@@ -137,6 +137,7 @@ function initializeDB() {
 function checkCotizadorData() {
 	//console.log("el valor de base de datos " + window.localStorage.getItem( "database_loaded" ));
 	//--if( window.localStorage.getItem( "database_loaded" ) != "1" ) {
+	alert("inicia el cotizador");
 	if( 1 ) {
 		db.transaction( createOrderTable, errorCB, successCB );
 		
