@@ -57,7 +57,7 @@ $('#mainPage').live('pagecreate', function (event) {
  */
 function onDeviceReady() {
 	/*var elem = document.getElementById("content");*/
-	alert( "The device is ready" );
+	//alert( "The device is ready" );
 	
 	initializeDB();
 	checkCotizadorData();
@@ -135,10 +135,9 @@ function initializeDB() {
  * Function to check if there is new data to loaded in local database
  */
 function checkCotizadorData() {
+	//--alert("inicia el cotizador");
 	//console.log("el valor de base de datos " + window.localStorage.getItem( "database_loaded" ));
-	//--if( window.localStorage.getItem( "database_loaded" ) != "1" ) {
-	alert("inicia el cotizador");
-	if( 1 ) {
+	if( window.localStorage.getItem( "database_loaded" ) != "1" ) {
 		db.transaction( createOrderTable, errorCB, successCB );
 		
 		$.ajax({
