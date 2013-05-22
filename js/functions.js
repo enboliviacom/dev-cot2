@@ -56,8 +56,8 @@ $('#mainPage').live('pagecreate', function (event) {
  * Event listener called after the phonegap library is loaded
  */
 function onDeviceReady() {
-	/*var elem = document.getElementById("content");
-	navigator.notification.alert( "The device is ready", function(){}, jsTitle, "Dale OK" );*/
+	/*var elem = document.getElementById("content");*/
+	alert( "The device is ready" );
 	
 	initializeDB();
 	checkCotizadorData();
