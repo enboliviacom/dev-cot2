@@ -344,7 +344,7 @@ function getModules( category ) {
 					htmlContent += "175";
 				
 				htmlContent += '</span>';
-				htmlContent += '<div class="pedidos">';
+				//--htmlContent += '<div class="pedidos">';
 				htmlContent += '<div class="ui-grid-a">';
 				htmlContent += '<div class="ui-block-a">';
 				htmlContent += '<input ';
@@ -354,7 +354,7 @@ function getModules( category ) {
 				//--htmlContent += ' onfocus="hideAllToolbars(\'custom_value_' + result.rows.item(i).id + '\', ' + result.rows.item(i).id + ')"';
 				//--htmlContent += ' onchange="changeValues(\'custom_value_' + result.rows.item(i).id + '\',' + result.rows.item(i).id + ')"';
 				htmlContent += ' id="custom_value_' + result.rows.item(i).id + '" class="bigInput" ';
-				htmlContent += ' type="number" value="" size="3" />';
+				htmlContent += ' type="number" data-mini="true" value="" size="3" />';
 				htmlContent += '</div>';
 				htmlContent += '<div class="ui-block-b">';
 				//--htmlContent += '<input type="button" class="order_button" id="order_button_' + result.rows.item(i).id + '" name="order_button_' + result.rows.item(i).id + '" ';
@@ -363,7 +363,7 @@ function getModules( category ) {
 				htmlContent += ' onclick="changeValues(\'custom_value_' + result.rows.item(i).id + '\',' + result.rows.item(i).id + ')" data-icon="check" />';
 				htmlContent += '</div>';
 				htmlContent += '</div>';
-				htmlContent += '</div>';
+				//--htmlContent += '</div>';
 				htmlContent += '</p>';
 				htmlContent += '</li>';
 			}
