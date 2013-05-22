@@ -345,6 +345,7 @@ function getModules( category ) {
 				
 				htmlContent += '</span>';
 				htmlContent += '<div class="pedidos">';
+				htmlContent += '<div class="ui-grid-a">';
 				htmlContent += '<div class="ui-block-a">';
 				htmlContent += '<input ';
 				htmlContent += ' onblur="showAllToolbars(' + result.rows.item(i).id + ')"';
@@ -360,6 +361,7 @@ function getModules( category ) {
 				htmlContent += '<input type="button" class="order_button" id="' + result.rows.item(i).id + '" name="order_button_' + result.rows.item(i).id + '" ';
 				htmlContent += ' data-inline="true" data-mini="true" data-theme="c" value="Pedir" class="bigInput2"';
 				htmlContent += ' onclick="changeValues(\'custom_value_' + result.rows.item(i).id + '\',' + result.rows.item(i).id + ')" data-icon="check" />';
+				htmlContent += '</div>';
 				htmlContent += '</div>';
 				htmlContent += '</div>';
 				htmlContent += '</p>';
